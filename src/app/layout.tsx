@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 
 // ! After 1h get new data (because nestJs saves results on the cache)
-export const revalidate = 10;
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "NextJs Image gallery",
