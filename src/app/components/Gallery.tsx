@@ -1,5 +1,6 @@
 import fetchImages from "../lib/fetchImages";
 import { ImagesResult } from "../models/Images";
+import ImageContainer from "./ImageContainer";
 
 type Props = {};
 const Gallery = async (props: Props) => {
@@ -11,7 +12,7 @@ const Gallery = async (props: Props) => {
   return (
     <section className="px-2 my-3 grid gap-2 grid-cols-gallery">
       {images.photos.map((photo) => (
-        <div className="h-64 bg-gray-200 rounded-xl" key={photo.id}></div>
+        <ImageContainer photo={photo} key={photo.id} />
       ))}
     </section>
   );
