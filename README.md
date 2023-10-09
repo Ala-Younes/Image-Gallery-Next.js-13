@@ -44,6 +44,8 @@
 
   - For dynamic images, provide the `blurDataURL` property. Tools like Plaiceholder can assist in generating the base64 image data.
 
+  - Schema property for blurred Effect
+
   ```JS
   blurredDataUrl: z.string().optional(),
   ```
