@@ -10,6 +10,7 @@ const Search = (props: Props) => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (search.trim() === "") return;
     router.push(`/results/${search}`);
     setSearch("");
   };
